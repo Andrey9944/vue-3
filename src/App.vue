@@ -1,17 +1,12 @@
+<script setup>
+import Collection from "@/components/Collection.vue";
+
+</script>
+
 <template>
-  <Collection/>
+  <Collection></Collection>
 </template>
 
-<script>
-import Collection from './components/Collection.vue'
-
-export default {
-  name: 'App',
-  components: {
-    Collection
-  }
-}
-</script>
 
 <style>
 #app {
