@@ -16,6 +16,7 @@
 
 <script>
 import { ref, onMounted } from 'vue';
+import { fetchProducts } from '../services/products';
 
 export default {
   name: 'collectionProducts',
@@ -24,14 +25,9 @@ export default {
     const products = ref([]);
 
     onMounted(async () => {
-      try {
-        const response = await fetch('https://fakestoreapi.com/products');
-        const data = await response.json();
-        products.value = data;
-        loading.value = false;
-      } catch (error) {
-        console.error(error);
-      }
+      loading.value = true;
+      products.value = await fetchProducts();
+      loading.value = false;
     });
 
     return {
