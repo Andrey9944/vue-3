@@ -80,8 +80,9 @@ export default {
 }
 
 h1 {
-  font-size: 24px;
-  margin-bottom: 20px;
+    font-size: 24px;
+    position: relative;
+    bottom: 38px;
 }
 
 h2 {

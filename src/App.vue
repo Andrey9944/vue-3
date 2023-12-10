@@ -1,10 +1,14 @@
 <script setup>
 import Collection from "@/components/Collection.vue";
+import AppHeader from "@/components/AppHeader.vue";
+import AppFooter from "@/components/AppFooter.vue";
 
 </script>
 
 <template>
+  <AppHeader></AppHeader>
   <Collection></Collection>
+  <AppFooter></AppFooter>
 </template>
 
 
